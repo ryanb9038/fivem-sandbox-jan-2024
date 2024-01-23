@@ -29,13 +29,13 @@ namespace vMenuClient.menus
         public bool ShowCoordinates { get; private set; } = false;
         public bool HideHud { get; private set; } = false;
         public bool HideRadar { get; private set; } = false;
-        public bool ShowLocation { get; private set; } = UserDefaults.MiscShowLocation;
+        public bool ShowLocation { get; private set; } = false;
         public bool DeathNotifications { get; private set; } = UserDefaults.MiscDeathNotifications;
         public bool JoinQuitNotifications { get; private set; } = UserDefaults.MiscJoinQuitNotifications;
         public bool LockCameraX { get; private set; } = false;
         public bool LockCameraY { get; private set; } = false;
         public bool ShowLocationBlips { get; private set; } = UserDefaults.MiscLocationBlips;
-        public bool ShowPlayerBlips { get; private set; } = UserDefaults.MiscShowPlayerBlips;
+        public bool ShowPlayerBlips { get; private set; } = true;
         public bool MiscShowOverheadNames { get; private set; } = UserDefaults.MiscShowOverheadNames;
         public bool ShowVehicleModelDimensions { get; private set; } = false;
         public bool ShowPedModelDimensions { get; private set; } = false;
