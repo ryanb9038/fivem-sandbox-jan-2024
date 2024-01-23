@@ -153,7 +153,7 @@ namespace vMenuClient
                 var noclipEntity = Game.PlayerPed.IsInVehicle() ? Game.PlayerPed.CurrentVehicle.Handle : Game.PlayerPed.Handle;
 
                 FreezeEntityPosition(noclipEntity, true);
-                SetEntityInvincible(noclipEntity, true);
+                SetEntityInvincible(noclipEntity, false);
 
                 Vector3 newPos;
                 Game.DisableControlThisFrame(0, Control.MoveUpOnly);
@@ -249,7 +249,7 @@ namespace vMenuClient
                 // If the player is not set as invisible by PlayerOptions or if the noclip entity is not the player ped, reset the visibility
                 if (MainMenu.PlayerOptionsMenu == null || !MainMenu.PlayerOptionsMenu.PlayerInvisible || (MainMenu.PlayerOptionsMenu.PlayerInvisible && noclipEntity == Game.PlayerPed.Handle))
                 {
-                    SetEntityVisible(noclipEntity, true, false);
+                    SetEntityVisible(noclipEntity, true, true);
                     SetLocalPlayerVisibleLocally(true);
                 }
 
