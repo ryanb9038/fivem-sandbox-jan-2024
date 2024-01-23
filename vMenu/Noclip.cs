@@ -232,7 +232,7 @@ namespace vMenuClient
                 SetEntityCollision(noclipEntity, false, false);
                 SetEntityCoordsNoOffset(noclipEntity, newPos.X, newPos.Y, newPos.Z, true, true, true);
 
-                SetEntityVisible(noclipEntity, false, false);
+                SetEntityVisible(noclipEntity, true, false);
                 SetLocalPlayerVisibleLocally(true);
                 SetEntityAlpha(noclipEntity, (int)(255 * 0.2), 0);
 
@@ -249,7 +249,7 @@ namespace vMenuClient
                 // If the player is not set as invisible by PlayerOptions or if the noclip entity is not the player ped, reset the visibility
                 if (MainMenu.PlayerOptionsMenu == null || !MainMenu.PlayerOptionsMenu.PlayerInvisible || (MainMenu.PlayerOptionsMenu.PlayerInvisible && noclipEntity == Game.PlayerPed.Handle))
                 {
-                    SetEntityVisible(noclipEntity, true, true);
+                    SetEntityVisible(noclipEntity, true, false);
                     SetLocalPlayerVisibleLocally(true);
                 }
 
