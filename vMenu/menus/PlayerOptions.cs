@@ -43,8 +43,8 @@ namespace vMenuClient.menus
             menu = new Menu(Game.Player.Name, "Player Options");
 
             // Create all checkboxes.
-            var playerGodModeCheckbox = new MenuCheckboxItem("Godmode", "Makes you invincible.", PlayerGodMode);
-            var invisibleCheckbox = new MenuCheckboxItem("Invisible", "Makes you invisible to yourself and others.", PlayerInvisible);
+            var playerGodModeCheckbox = new MenuCheckboxItem("~y~Godmode", "Makes you invincible.", PlayerGodMode);
+            var invisibleCheckbox = new MenuCheckboxItem("~c~Invisible", "Makes you invisible to yourself and others.", PlayerInvisible);
             var unlimitedStaminaCheckbox = new MenuCheckboxItem("Unlimited Stamina", "Allows you to run forever without slowing down or taking damage.", PlayerStamina);
             var fastRunCheckbox = new MenuCheckboxItem("Fast Run", "Get ~g~Snail~s~ powers and run very fast!", PlayerFastRun);
             SetRunSprintMultiplierForPlayer(Game.Player.Handle, PlayerFastRun && IsAllowed(Permission.POFastRun) ? 1.49f : 1f);
