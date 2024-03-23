@@ -32,7 +32,7 @@ namespace vMenuClient.menus
             // Create the buttons and checkboxes.
             var spawnByName = new MenuItem("Spawn Vehicle By Model Name", "Enter the name of a vehicle to spawn.");
             var spawnInVeh = new MenuCheckboxItem("Spawn Inside Vehicle", "This will teleport you into the vehicle when you spawn it.", SpawnInVehicle);
-            var replacePrev = new MenuCheckboxItem("Replace Previous Vehicle", "This will automatically delete your previously spawned vehicle when you spawn a new vehicle.", ReplaceVehicle);
+            var replacePrev = new MenuCheckboxItem("~c~Replace Previous Vehicle", "This will automatically delete your previously spawned vehicle when you spawn a new vehicle.", ReplaceVehicle);
 
             // Add the items to the menu.
             if (IsAllowed(Permission.VSSpawnByName))
@@ -45,8 +45,8 @@ namespace vMenuClient.menus
 
             #region addon cars menu
             // Vehicle Addons List
-            var addonCarsMenu = new Menu("~r~Addon Vehicles", "Spawn An Addon Vehicle");
-            var addonCarsBtn = new MenuItem("~r~Addon Vehicles", "A list of addon vehicles available on this server.") { Label = "→→→" };
+            var addonCarsMenu = new Menu("Addon Vehicles", "Spawn An Addon Vehicle");
+            var addonCarsBtn = new MenuItem("~b~Addon Vehicles", "A list of addon vehicles available on this server.") { Label = "→→→" };
 
             menu.AddMenuItem(addonCarsBtn);
 
