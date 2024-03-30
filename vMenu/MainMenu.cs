@@ -174,7 +174,7 @@ namespace vMenuClient
             }
             else
             {
-                MenuToggleKey = "M";
+                MenuToggleKey = "F1";
             }
 
             RegisterKeyMapping($"vMenu:{KeyMappingID}:NoClip", "vMenu NoClip Toggle Button", "keyboard", NoClipKey);
