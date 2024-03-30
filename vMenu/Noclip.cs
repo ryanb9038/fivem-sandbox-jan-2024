@@ -85,7 +85,6 @@ namespace vMenuClient
             if (NoclipActive)
             {
                 SetCurrentPedWeapon(Game.PlayerPed.Handle, (uint)GetHashKey("WEAPON_UNARMED"), true);
-                SetVehicleWeaponsDisabled(1, 1);
                 Scale = RequestScaleformMovie("INSTRUCTIONAL_BUTTONS");
                 while (!HasScaleformMovieLoaded(Scale))
                 {
